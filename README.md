@@ -6,29 +6,49 @@
     - There is a bug with the latest brew version of protobuf, not yet compatible with the js plugin
 - Buf `brew install bufbuild/buf/buf`
 
-
-
 ## Usage
 
 1. Generate JS/TS files from the proto folder
     ```
-    cd proto
+    cd shared
     ./build.sh
     ```
-2. Run the server
+2. Run any server
+    ts
     ```
-    npm run start:server
+    cd server/ts
+    npm i 
+    npm run start
     ```
-3. Run the JS client
+
+    go
     ```
-    npm run start:client
+    cd server/go
+    go mod tidy
+    go run main.go
     ```
+
+3. Run any client
+    ts
+    ```
+    cd client/ts
+    npm i 
+    npm run start
+    ```
+
+    go
+    ```
+    cd client/go
+    go mod tidy
+    go run main.go
+    ```
+
 4. Run a web client
     ```
     # Install grpcui if you haven't already
     go install github.com/fullstorydev/grpcui/cmd/grpcui@latest
 
-    grpcui -protoset ./proto/buf-image.bin -plaintext localhost:4000 
+    grpcui -protoset ./shared/proto/buf-image.bin -plaintext localhost:4000 
     ```
 
 
