@@ -1,5 +1,6 @@
 import * as grpc from '@grpc/grpc-js';
-import { GreetingsServiceService } from './proto/greetings/v1/greetings_grpc_pb';
+    import * as http from "http";
+import { connectNodeAdapter } from "@bufbuild/connect-node";
 import { GreetRequest, GreetResponse } from './proto/greetings/v1/greetings_pb';
 
 const greetingsService = {
@@ -18,14 +19,19 @@ const greetingsService = {
 }
 
 function main() {
-    const server = new grpc.Server();
+    // const server = new grpc.Server();
 
-    server.bindAsync('0.0.0.0:4000', grpc.ServerCredentials.createInsecure(), () => {
-        server.start();
+    // server.bindAsync('0.0.0.0:4000', grpc.ServerCredentials.createInsecure(), () => {
+    //     server.start();
 
-        server.addService(GreetingsServiceService, greetingsService)
-        console.log('Server is running on 0.0.0.0:4000');
-    });
+    //     server.addService(GreetingsServiceService, greetingsService)
+    //     console.log('Server is running on 0.0.0.0:4000');
+    // });
+
+
+http.createServer(
+  connectNodeAdapter({ routes }) // responds with 404 for other requests
+).listen(8080);
 }
 
 main();

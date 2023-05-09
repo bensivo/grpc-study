@@ -5,7 +5,7 @@ import { GreetRequest } from './proto/greetings/v1/greetings_pb';
 const client = new GreetingsServiceClient('localhost:4000', credentials.createInsecure());
 
 const request = new GreetRequest();
-request.setName('Benjamin');
+request.setName('Typescript client');
 
 client.greet(request, (err, response) => {
     if (err) {

@@ -21,6 +21,7 @@
         "typescript": "^5.0.4"
     },
     "dependencies": {
+        "@bufbuild/connect-node": "^0.8.6",
         "@grpc/grpc-js": "^1.8.14"
     }
 }
