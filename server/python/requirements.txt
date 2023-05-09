@@ -1,0 +1,4 @@
+grpcgreetings @ file:///Users/ben/code/grpc-study/shared/python
+grpcio==1.54.0
+grpcio-tools==1.54.0
+protobuf==4.23.0

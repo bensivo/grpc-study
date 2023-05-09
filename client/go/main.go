@@ -19,6 +19,7 @@ func main() {
 	client := greetingsv1connect.NewGreetingsServiceClient(
 		newInsecureClient(),
 		"http://localhost:4000",
+		// connect.WithGRPC(), // Required for standard grpc servers, like the python server in this repo
 	)
 
 	req := connect.NewRequest(&greetingsv1.GreetRequest{
