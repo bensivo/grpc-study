@@ -8,12 +8,13 @@
 
 ## Usage
 
-1. Generate JS/TS files from the proto folder
+1. Generate language-specfic clients from the shared folder
     ```
     cd shared
     ./build.sh
     ```
 2. Run any server
+
     ts
     ```
     cd server/ts
@@ -29,6 +30,7 @@
     ```
 
 3. Run any client
+
     ts
     ```
     cd client/ts
