@@ -1,0 +1,1 @@
+Buf connect does not support python quite yet, so this folder just uses protoc as defined in the grpc docs.

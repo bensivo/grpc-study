@@ -10,3 +10,6 @@ cd ../ts
 cd ../go
 ./build.sh
 
+cd ../python
+./build.sh
+

@@ -45,6 +45,15 @@
     go run main.go
     ```
 
+    python
+    ```
+    cd client/python
+    python3 -m venv ./venv
+    source ./venv/bin/activate
+    pip install -r requirements.txt
+    python main.py
+    ```
+
 4. Run a web client
     ```
     # Install grpcui if you haven't already
@@ -55,5 +64,3 @@
 
 
 ## Next Steps:
-
-- Create a server and client for python
