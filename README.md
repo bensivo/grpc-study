@@ -56,10 +56,4 @@
 
 ## Next Steps:
 
-- Create dockerized build and run for node.js server
-
-- Figure out grpc-gateway for HTTP+JSON interface: https://github.com/grpc-ecosystem/grpc-gateway
-
-- Create separate npm package for generated JS/TS files
-
-- Create a server and client for python, golang
+- Create a server and client for python
