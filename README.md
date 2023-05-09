@@ -2,9 +2,11 @@
 
 ## Requirements
 - Node.js
+- golang
+- python3
 - protoc `brew install protobuf@3 && brew link --overwrite protobuf@3`
     - There is a bug with the latest brew version of protobuf, not yet compatible with the js plugin
-- Buf `brew install bufbuild/buf/buf`
+- buf `brew install bufbuild/buf/buf`
 
 ## Usage
 
