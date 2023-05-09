@@ -4,7 +4,7 @@
 cd proto 
 ./build.sh
 
-cd ../js
+cd ../ts
 ./build.sh
 
 cd ../go
